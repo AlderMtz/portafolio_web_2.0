@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import project1 from "../assets/projects/platzigram.png";
+import project2 from "../assets/projects/taskapp.png";
+import project3 from "../assets/projects/freedomLogo.png";
+import project4 from "../assets/projects/pass.png";
+import project5 from "../assets/projects/clone-google.png";
+import project6 from "../assets/projects/c-pendulo.png";
 
 export const HERO_CONTENT = `Desarrollador Backend especializado en frameworks de Python, con experiencia en APIs RESTful, proyectos en POS y e-commerce. Destaco en validación de datos en tiempo real y automatización de procesos, optimizando sistemas y mejorando la experiencia del usuario. Experiencia adquirida en entornos laborales y diplomados, con enfoque en soluciones innovadoras para el desarrollo web.`;
 
@@ -9,68 +11,116 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "FEB 2024- OCT 2024",
+    role: "Desarrollador Backend",
+    company: "iSypos S.A de C.V.",
+    description: `Desarrollador Backend – APIs para Sistema de Punto de Venta con web scraping a páginas e-commerce.`,
+    highlights: [
+    "Diseñé APIs RESTful utilizando FastAPI y MariaDB, implementando conexiones asíncronas para alto rendimiento.",
+    "API de Productos: Implementación de gestión de inventarios e integración a plataformas e-commerce (Shopify, VTEX) mediante web scraping multihilo.",
+    "API de E-Servicios: Desarrollo de transacciones digitales para recargas, pagos y pines, integrando APIs externas.",
+    "Automatización: Validación en tiempo real de licencias, correos electrónicos y códigos postales, mejorando el registro de usuarios y optimizando coberturas logísticas (paqueterías).",
+    "Conexión del POS con plataformas e-commerce, facilitando la comparación y actualización de precios y bases de datos."
+  ],
+    technologies: ["FastAPI", "Python", "Pytest", "MariaDb", "SQLAlchemy", "Beautifulsoup","Selenium", "cURL", "threading"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Mar 2022- Dic 2022",
+    role: "Programador/Servicio al cliente",
+    company: "Global Engineering & Support del Bajio S.A de C.V.",
+    description: `Programador en automatizacion (PLC, HMI, Brazos roboticos).`,
+    highlights: [
+      "Programación de brazos robóticos Epson SCARA LS6-B. ",
+      "Sistemas de trazabilidad (ATS) (TCP/IP).",
+      "Mantenimiento preventivo, correctivo y tryouts a sistemas automatizados."
+    ],
+    technologies: ["KEYENCE", "Epson SCARA", "SIEMENS", "COGNEX", "LADDER"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+    year: "Mar 2020-Jun 2020",
+    role: "Programador",
+    company: "Biotecnica del Bajio S.A. DE C.V. S.A de C.V.",
+    description: `Programador en automatizacion (PLC, HMI).`,
+    highlights: [
+      "Adaptación de sensor de humedad a equipos, mediante PLC e interfaces gráficas en HM.",
+      "Ejecución de tryouts a sistemas de control."
+    ],
+    technologies: ["Allen Bradley", "Balluff", "LADDER"],
+  }
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Un sitio web de portafolio personal que muestra proyectos, habilidades e información de contacto.",
+      link: "#",
+      technologies: ["React", "HTML", "CSS", "Tailwind"],
   },
   {
-    title: "Blogging Platform",
+    title: "Platzigram",
+    image: project1,
+    description:
+      `La aplicación ofrece funciones clave, como un sistema de registro de usuarios, un
+        feed dinámico para explorar y crear publicaciones, una ventana detallada para gestionar perfiles y
+        una aplicación de mensajería directa para una comunicación instantánea. Además, destaca por su
+        sistema de notificaciones que informa a los usuarios sobre interacciones como comentarios, likes,
+        follows y mensajes nuevos, mejorando la interactividad y la experiencia general.`,
+      link: 'https://platzigram-deploy.onrender.com/users/login/',
+        technologies: ["Django", "Postgres", "HTML", "CSS", "bootstrap"],
+  },
+  {
+    title: "Task app",
+    image: project2,
+    description:
+      `Aplicación enfocada en la administración de tareas. La plataforma
+      incluye áreas dedicadas para visualizar las tareas actuales y área de detalles de tarea,
+      permitiendo el registro, modificación o eliminación de tareas de manera sencilla. La comunicación fluida
+      entre el frontend y el backend se logra mediante operaciones CRUD, garantizando una interacción eficaz y
+      una
+      gestión completa de las tareas.`,
+      link: "https://taskapp-2mjd.onrender.com/tasks",
+      technologies: ["Django rest framework", "HTML", "CSS", "React", "Tailwind "],
+  },
+  {
+    title: "Password generator",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      `Aplicación especializada en la generación de contraseñas, equipada con funcionalidades
+      que permiten personalizar la longitud de las contraseñas mediante una lista desplegable,
+      permitiendo adaptar la seguridad según sus necesidades. Además, la aplicación incluye la implementación
+      de caracteres especiales, mayúsculas y números, garantizando la creación de contraseñas robustas y
+      seguras.`,
+      link: "https://aldermtz.pythonanywhere.com/",
+      technologies: ["Python", "HTML", "CSS"],
   },
+  {
+    title: "Clon de google",
+    image: project5,
+    description:
+      `Proyecto de recreación de la interfaz de inicio de Google con objetivo práctico de
+      consolidar mis conocimientos en HTML y CSS. Esta iniciativa me permitió aplicar de manera práctica los
+      conceptos aprendidos, fortaleciendo mis habilidades en el diseño y estructuración de páginas web.`,
+      link: "https://aldermtz.github.io/clone_google/",
+      technologies: ["HTML", "CSS"],
+  },
+  {
+    title: "Carro péndulo invertido",
+    image: project6,
+    description:
+      `Proyecto educativo donde se abordó el desarrollo integral del modelo matemático del
+      carro péndulo invertido, junto con su correspondiente diseño físico. La implementación del controlador
+      PID se realizó en una placa Arduino Uno, mientras que el reconocimiento de imágenes se logró mediante el
+      uso de una Raspberry Pi, programada en Python con el apoyo de bibliotecas especializadas en
+      reconocimiento de imágenes.`,
+      link: "https://www.youtube.com/watch?v=NGgrXbrhXpc",
+      technologies: ["Python", "Arduino", "Raspberry Pi", "OpenCV", "SolidWorks", "MATLAB"],
+  }
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Santa Lucia del Camino, 71243, Oaxaca.",
+  phoneNo: "+52 951 126 5431",
+  email: "alder.mtz.ant@gmail.com",
 };

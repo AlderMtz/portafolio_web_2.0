@@ -39,7 +39,7 @@ const Technologies = () => {
                     duration: 1.5
                 }}
                 className="my-20 text-center text-4xl"
-                >Technologies
+                >Tecnologías
             </motion.h2>
             <motion.div
                 whileInView={{

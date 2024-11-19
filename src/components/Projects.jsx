@@ -18,7 +18,7 @@ const Projects = () => {
                 }}
                 className="my-20 text-center text-4xl"
                 >
-                Projects
+                Proyectos
             </motion.h2>
             <div>
                 {PROJECTS.map((project, index) => (
@@ -36,13 +36,15 @@ const Projects = () => {
                                 duration: 1
                             }}
                             className="w-full lg:w-1/4">
-                            <img src={project.image}
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                <img
+                                src={project.image}
                                 width={250}
                                 height={250}
                                 alt={project.title}
                                 className="mb-6 rounded"
-                            >
-                            </img>
+                                />
+                            </a>
                         </motion.div>
                         <motion.div 
                             whileInView={{

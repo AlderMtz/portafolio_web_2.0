@@ -1,5 +1,5 @@
 import { FaAddressBook, FaCcVisa, FaGithub, FaInstagram, FaLinkedinIn, FaUserTag } from "react-icons/fa"
-import logo from "../assets/raviKumarLogo.webp"
+import logo from "../assets/freedomLogo.png"
 import cv_pdf from "../assets/CV_Alder.pdf"
 import { FaAddressCard, FaLinkedin } from "react-icons/fa6"
 
@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between py-6">
         <div className="flex flex-shrink-0 items-center">
           <a href="/" aria-label="Home">
-            <img src={logo} className="mx-2" width={50} height={33}
+            <img src={logo} className="mx-6" width={70} height={70}
             alt="Logo"/>
           </a>
         </div>

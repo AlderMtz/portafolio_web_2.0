@@ -17,7 +17,7 @@ const Experience = () => {
                     duration: 1.5
                 }}
                 className="my-20 text-center text-4xl">
-                Experience
+                Experiencia
             </motion.h2>
             <div>
                 {EXPERIENCES.map((experience, index) => (
@@ -63,6 +63,13 @@ const Experience = () => {
                             <p className="mb-4 text-stone-400">
                                 {experience.description}
                             </p>
+                            <ul className="mb-4 list-disc pl-6 text-stone-400">
+                                {experience.highlights.map((highlight, idx) => (
+                                    <li key={idx} className="mb-2">
+                                        {highlight}
+                                    </li>
+                                ))}
+                            </ul>
                             {experience.technologies.map((tech, index) => (
                                 <span className="mr-2 mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300"
                                     key={index}>

@@ -1,5 +1,5 @@
 import { Children } from "react"
-import profilePic from "../assets/raviKumarProfile.webp"
+import profilePic from "../assets/alder_1.png"
 import {HERO_CONTENT} from "../constants"
 import { motion } from "framer-motion"
 
