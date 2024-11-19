@@ -1,6 +1,6 @@
 import { FaAddressBook, FaCcVisa, FaGithub, FaInstagram, FaLinkedinIn, FaUserTag } from "react-icons/fa"
 import logo from "../assets/raviKumarLogo.webp"
-import cv_pdf from "../assets/CV_example.pdf"
+import cv_pdf from "../assets/CV_Alder.pdf"
 import { FaAddressCard, FaLinkedin } from "react-icons/fa6"
 
 const Navbar = () => {

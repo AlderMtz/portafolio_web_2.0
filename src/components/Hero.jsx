@@ -42,8 +42,8 @@ const Hero = () => {
                             src={profilePic} 
                             alt="Alder Mtz" 
                             className="border border-stone-900 rounded-3xl"
-                            width={650}
-                            height={650}
+                            width={550}
+                            height={550}
                             initial={{
                                 x: 100,
                                 opacity: 0
@@ -80,7 +80,7 @@ const Hero = () => {
                         </motion.span>
                         <motion.p 
                             variants={childVariants}
-                            className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
+                            className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter text-justify indent-12"
                             >
                             {HERO_CONTENT}
                         </motion.p>
