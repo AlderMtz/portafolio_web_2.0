@@ -9,3 +9,37 @@
     background-color: #000000;
 
 }
+
+@keyframes glow {
+    0% {
+        /* text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #00bfff; */
+        box-shadow: 0 0 8px #00bfff, 0 0 10px #00bfff;
+    }
+    50% {
+        /* text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff; */
+        box-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff;
+    }
+    100% {
+        /* text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #00bfff; */
+        box-shadow: 0 0 8px #00bfff, 0 0 10px #00bfff;
+    }
+}
+
+.glow-effect {
+    animation: glow 3s infinite;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    border-radius: 9999px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+    transition: all 2s ease;
+}
+
+.glow-effect:hover {
+    background-color: #00bfff; /* Change to cyan background */
+    box-shadow: 0 0 40px #00bfff, 0 0 60px #00bfff, 0 0 80px #00bfff; /* Glowing border effect */
+    /* text-shadow: 0 0 50px #00bfff, 0 0 75px #00bfff, 0 0 100px #00bfff; Glowing text effect */
+}
