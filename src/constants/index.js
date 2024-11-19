@@ -12,12 +12,12 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "FEB 2024- OCT 2024",
-    role: "Desarrollador Backend",
+    role: "Desarrollador Backend ",
     company: "iSypos S.A de C.V.",
     description: `Desarrollador Backend – APIs para Sistema de Punto de Venta con web scraping a páginas e-commerce.`,
     highlights: [
     "Diseñé APIs RESTful utilizando FastAPI y MariaDB, implementando conexiones asíncronas para alto rendimiento.",
-    "API de Productos: Implementación de gestión de inventarios e integración a plataformas e-commerce (Shopify, VTEX) mediante web scraping multihilo.",
+    "API de Productos: Implementación de gestión de productos y  actualizacion mediante plataformas e-commerce (Shopify, VTEX) utilizando web scraping multihilo.",
     "API de E-Servicios: Desarrollo de transacciones digitales para recargas, pagos y pines, integrando APIs externas.",
     "Automatización: Validación en tiempo real de licencias, correos electrónicos y códigos postales, mejorando el registro de usuarios y optimizando coberturas logísticas (paqueterías).",
     "Conexión del POS con plataformas e-commerce, facilitando la comparación y actualización de precios y bases de datos."
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Mar 2022- Dic 2022",
-    role: "Programador/Servicio al cliente",
+    role: "Programador/Servicio al cliente ",
     company: "Global Engineering & Support del Bajio S.A de C.V.",
     description: `Programador en automatizacion (PLC, HMI, Brazos roboticos).`,
     highlights: [
@@ -38,7 +38,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Mar 2020-Jun 2020",
-    role: "Programador",
+    role: "Programador ",
     company: "Biotecnica del Bajio S.A. DE C.V. S.A de C.V.",
     description: `Programador en automatizacion (PLC, HMI).`,
     highlights: [
