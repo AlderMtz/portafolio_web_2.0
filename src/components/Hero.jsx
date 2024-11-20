@@ -89,9 +89,10 @@ const Hero = () => {
                             href="./src/assets/CV_Alder.pdf"
                             target="_blank"
                             rel="noopener noreferrer"   
-                            download
+                            // downloadd
+                            download="CV_Alder.pdf"
                             // className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10">
-                            className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 glow-effect">
+                            className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 glow-effect ">
                                 Descargar CV
                         </motion.a> 
                     </motion.div>

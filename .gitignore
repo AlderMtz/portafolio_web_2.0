@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 myenv
 todo
+python_func.py
 

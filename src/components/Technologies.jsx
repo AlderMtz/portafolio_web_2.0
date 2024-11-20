@@ -1,5 +1,5 @@
 import { BiDockBottom } from "react-icons/bi"
-import { BsGithub } from "react-icons/bs"
+import { BsBootstrap, BsGithub } from "react-icons/bs"
 import { DiDjango, DiDocker, DiMysql } from "react-icons/di"
 import { FaDocker } from "react-icons/fa"
 import { GrDocker, GrMysql } from "react-icons/gr"
@@ -114,13 +114,6 @@ const Technologies = () => {
                 <motion.div
                     initial="initial"
                     animate="animate"
-                    variants={iconVariants(2)}
-                    className="p-3"> 
-                    <RiReactjsFill className="text-7xl text-cyan-500"></RiReactjsFill>
-                </motion.div>
-                <motion.div
-                    initial="initial"
-                    animate="animate"
                     variants={iconVariants(6)}
                     className="p-3"> 
                     <SiHtml5 className="text-7xl text-[#f26529]"></SiHtml5>
@@ -131,6 +124,20 @@ const Technologies = () => {
                     variants={iconVariants(4)}
                     className="p-3"> 
                     <SiCss3 className="text-7xl text-[#1874ba]"></SiCss3>
+                </motion.div>
+                <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={iconVariants(2)}
+                    className="p-3"> 
+                    <RiReactjsFill className="text-7xl text-cyan-500"></RiReactjsFill>
+                </motion.div>
+                <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={iconVariants(4)}
+                    className="p-3"> 
+                    <BsBootstrap className="text-7xl text-[#644092]"></BsBootstrap>
                 </motion.div>
 
             </motion.div>
