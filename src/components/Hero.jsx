@@ -91,7 +91,7 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"   
                             // downloadd
-                            download=cv_pdf
+                            download={cv_pdf}
                             // className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10">
                             className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 glow-effect ">
                                 Descargar CV
