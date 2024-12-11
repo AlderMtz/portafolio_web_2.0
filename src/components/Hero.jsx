@@ -2,7 +2,6 @@ import { Children } from "react"
 import profilePic from "../assets/alder_1.png"
 import {HERO_CONTENT} from "../constants"
 import { motion } from "framer-motion"
-import cv_pdf from "../assets/CV_Alder.pdf"
 
 const containerVariants = {
     hidden: {
@@ -87,11 +86,11 @@ const Hero = () => {
                         </motion.p>
                         <motion.a 
                             variants={childVariants}
-                            href="./src/assets/CV_Alder.pdf"
+                            href="../assets/CV_Alder.pdf"
                             target="_blank"
                             rel="noopener noreferrer"   
                             // downloadd
-                            download={cv_pdf}
+                            download="CV_Alder.pdf"
                             // className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10">
                             className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 glow-effect ">
                                 Descargar CV
